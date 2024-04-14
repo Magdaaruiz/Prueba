@@ -1,0 +1,46 @@
+<head>
+<meta charset="UTF-8">
+</head>
+<body> 
+<h1> hola magda  </h1>
+<p>No tienes pareja ? </p>
+<div><img src='./gato.JPG'> </div>
+<button> Buscar pareja</button>
+</body>
+
+<style>
+body{
+background : purple ;
+display : flex;
+justify-content : center;
+align-items: center ;
+flex-direction: column;
+color : white;
+gap : 3pxpx;
+}
+
+h1{
+color : white;
+ }
+
+img{
+width : 250px;
+height : 250px;
+object-fit : contain;
+
+}
+</style>
+
+<script>
+const button= document.querySelector("button")
+let img = document.querySelector("div")
+let text= document.querySelector("h1")
+let pp= document.querySelector("p")
+
+button.onclick = () => {
+text.textContent = "Tu pareja es Andrés"
+img.innerHTML = "<img src='./prueba.PNG'>"
+pp.textContent = "💜💗💜💗💜💗"
+} 
+
+</script>
